@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="DZ GamePrice — قارن أسعار الألعاب والكونسولز وقطع PC في الجزائر.">
+  <title>DZ GamePrice | أسعار الألعاب في الجزائر</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="DZ GamePrice الرئيسية"><span class="brand-mark">DZ</span><span>DZ <b>GamePrice</b><small>أسعار الألعاب في الجزائر</small></span></a>
+  <nav><a href="#products">المنتجات</a><a href="#builder">PC Builder</a><a href="#contact">تواصل معنا</a></nav>
+  <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow"><i></i> عالم الجيمينغ بين يديك</span>
+      <h1>قارن. اختَر.<br><em>والعب بسعر أذكى.</em></h1>
+      <p>اكتشف الألعاب، أجهزة الكونسول، وقطع الكمبيوتر في مكان واحد.</p>
+      <a class="primary-btn" href="#products">اكتشف المنتجات <span>←</span></a>
+      <div class="hero-stats"><div><b>بحث فوري</b><small>عن المنتجات</small></div><div><b>مقارنة سهلة</b><small>بين الأسعار</small></div><div><b>واجهة عربية</b><small>مصممة لك</small></div></div>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="orb"></div><div class="console">◈</div><div class="float-card fc1">🎮 <span>GAMING</span></div><div class="float-card fc2">⚡ <span>PC PARTS</span></div><div class="grid-glow"></div></div>
+  </section>
+  <section class="wrap section" id="products">
+    <div class="section-head"><div><span class="eyebrow">كتالوج الألعاب</span><h2>اكتشف المنتجات</h2><p>ابحث، صفِّ النتائج، وقارن العروض التجريبية.</p></div><span class="count" id="resultCount">0 منتج</span></div>
+    <div class="toolbar">
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن لعبة، جهاز، أو قطعة..." autocomplete="off"></label>
+      <select id="categoryFilter" aria-label="التصنيف"><option value="all">كل التصنيفات</option><option value="console">كونسول</option><option value="game">ألعاب</option><option value="gpu">كروت شاشة</option><option value="cpu">معالجات</option><option value="accessory">إكسسوارات</option></select>
+      <select id="sortFilter" aria-label="ترتيب المنتجات"><option value="featured">الأبرز</option><option value="low">السعر: الأقل أولاً</option><option value="high">السعر: الأعلى أولاً</option><option value="az">الاسم: أ-ي</option></select>
+    </div>
+    <div class="notice"><span>ⓘ</span><p><b>ملاحظة مهمة:</b> الأسعار المعروضة هنا تجريبية لتوضيح طريقة عمل الموقع، وليست أسعارًا مباشرة أو عروضًا مؤكدة من متاجر جزائرية.</p></div>
+    <div class="product-grid" id="productGrid"></div>
+    <div class="empty hidden" id="emptyState">لم نجد منتجات مطابقة. جرّب كلمة بحث أو تصنيفًا آخر.</div>
+  </section>
+  <section class="wrap section builder" id="builder">
+    <div><span class="eyebrow">ركّب جهازك</span><h2>PC Builder</h2><p>احسب ميزانية تجريبية لتجميعة الكمبيوتر الخاصة بك.</p></div>
+    <div class="builder-controls">
+      <label>كرت الشاشة<select id="gpuSelect"><option value="45000">RTX 3060 — 45,000 دج</option><option value="65000">RTX 4060 — 65,000 دج</option><option value="105000">RTX 4070 SUPER — 105,000 دج</option></select></label>
+      <label>المعالج<select id="cpuSelect"><option value="22000">Ryzen 5 5600 — 22,000 دج</option><option value="30000">Core i5-12400F — 30,000 دج</option><option value="18000">Core i3 — 18,000 دج</option></select></label>
+      <div class="build-total"><small>المجموع التقديري للقطعتين</small><strong id="buildTotal">67,000 دج</strong></div>
+    </div>
+  </section>
+  <section class="wrap section contact-section" id="contact">
+    <div class="contact-box"><div><span class="eyebrow">نحن هنا لمساعدتك</span><h2>تواصل مع DZ GamePrice</h2><p>تابع الحسابات أو تواصل معنا للاستفسارات والتحديثات.</p></div>
+      <div class="socials">
+        <a class="social facebook" href="https://www.facebook.com/share/1JLt2nigF3/" target="_blank" rel="noopener noreferrer"><span>f</span> Facebook</a>
+        <a class="social instagram" href="https://www.instagram.com/raouf__hafid?stkn=d2VyYXI1ZWFoN253" target="_blank" rel="noopener noreferrer"><span>◎</span> Instagram</a>
+        <a class="social tiktok" href="https://www.tiktok.com/@raouf_hafid07?_r=1&_t=ZS-9AEaYaD6VGu" target="_blank" rel="noopener noreferrer"><span>♪</span> TikTok</a>
+        <a class="social email" href="mailto:raoufhafid7@gmail.com"><span>✉</span> Email</a>
+        <a class="social phone" href="tel:+213791217435"><span>☎</span> 0791 21 74 35</a>
+        <a class="social phone" href="tel:+213669068133"><span>☎</span> 0669 06 81 33</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">DZ</span><span>DZ <b>GamePrice</b><small>أسعار الألعاب في الجزائر</small></span></a><p>© <span id="year"></span> DZ GamePrice. جميع الحقوق محفوظة.</p><a href="#top" class="back-top">العودة للأعلى ↑</a></footer>
+<div class="modal hidden" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close></div><div class="modal-card"><button class="modal-close" data-close aria-label="إغلاق">×</button><div id="modalContent"></div></div></div>
+<script src="app.js"></script>
+</body>
+</html>
